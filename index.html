@@ -1,34 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="src/icon.svg" type="image/x-icon">
-  <title>Abin | portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="document.body.style.opacity='1'">
-  <section id="greet">
-    <h1>hi, my name is abin.</h1>
-    <h2>Developer, Open Source Advocate, Tinkerer</h2>
-    <a href="#main" class="button-down">
-      <svg width="250" height="20" viewBox="0 0 250 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="250" height="20" fill="gray"/></svg>
-    </a>
-  </section>
-  
-  <section id="main">
-    <nav id="nav">
-      <a href="#"><span>home</span></a>
-      <a href="about.html"><span>about - contact</span></a>
-      <a href="#"><span>project 1</span><img src="https://images.unsplash.com/photo-1660201367471-9fc0cb34734f?auto=format&fit=crop&w=800&q=60"/></a>
-      <a href="#"><span>project 2</span><img src="https://images.unsplash.com/photo-1660158847730-e93a2a96ca59?auto=format&fit=crop&w=800&q=60"/></a>
-      <a href="#"><span>project 3</span><img src="https://images.unsplash.com/photo-1660074519968-d718487e9a7b?auto=format&fit=crop&w=800&q=60"/></a>
-      <a href="#"><span>project 4</span><img src="https://images.unsplash.com/photo-1657299156568-c94580e20fb6?auto=format&fit=crop&w=500&q=60"/></a>
-      <a href="#"><span>project 5</span><img src="https://images.unsplash.com/photo-1660087031197-f483b4388e91?auto=format&fit=crop&w=500&q=60"/></a>
-      <a href="#"><span>project 6</span><img src="https://images.unsplash.com/photo-1660087031197-f483b4388e91?auto=format&fit=crop&w=500&q=60"/></a>
-      <a href="#"><span>project 7</span><img src="https://images.unsplash.com/photo-1660087031197-f483b4388e91?auto=format&fit=crop&w=500&q=60"/></a>
-    </nav>
-  </section>
-<script src="script.js"></script>
+<body>
+    <div id="home">
+        <h1>hi. my name is <a href="#contact">abin</a>. im a software & web developer based in kerala IN.</h1>
+    </div>
+
+    <div id="contact">
+        <h1>
+            you can contact me via <a href="#" class="cryptedmail" data-name="abinjshaju" data-domain="gmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">mail</a>
+             or <a href="https://www.linkedin.com/in/abinshaju/" target="_blank">linkedin</a>
+             or on <a href="https://twitter.com/desperatedevel" target="_blank">twitter</a>.
+        </h1>
+        <h2><a href="#projects">projects</a></h2>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/2.png" alt="Image">
+                <div class="text-overlay">Project #1</div>
+            </a>
+        </div>
+    </div>    
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/3.png" alt="Image">
+                <div class="text-overlay">Project #2</div>
+            </a>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/4.png" alt="Image">
+                <div class="text-overlay">Project #3</div>
+            </a>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/5.png" alt="Image">
+                <div class="text-overlay">Project #4</div>
+            </a>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/6.png" alt="Image">
+                <div class="text-overlay">Project #5</div>
+            </a>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <a href="#">
+                <img src="src/images/7.png" alt="Image">
+                <div class="text-overlay">Project #6</div>
+            </a>
+        </div>
+    </div>
+    <div id="plug">
+        <div class="main-plug"><h1>checkout <a href="https://github.com/abinjshaju" target="_blank">github</a> and <a href="https://dev.to/abinjshaju" target="_blank">dev</a> page and <a href="#" target="_blank">the blog</a></h1>
+        <h3><a href="#home">home</a></h3></div>
+        <div class="repo-plug">
+            <h3>found an issue with this page? fix it on <a href="https://github.com/Abinjshaju/Abinjshaju.github.io" target="_blank">github</a></h3>
+            <h3>abinjshaju &copy;2023</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
